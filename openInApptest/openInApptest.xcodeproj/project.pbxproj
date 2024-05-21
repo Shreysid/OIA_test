@@ -14,6 +14,9 @@
 		0BC923762BFC8E2F003FC4C0 /* openInApptestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC923752BFC8E2F003FC4C0 /* openInApptestTests.swift */; };
 		0BC923802BFC8E2F003FC4C0 /* openInApptestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC9237F2BFC8E2F003FC4C0 /* openInApptestUITests.swift */; };
 		0BC923822BFC8E2F003FC4C0 /* openInApptestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC923812BFC8E2F003FC4C0 /* openInApptestUITestsLaunchTests.swift */; };
+		0BC923912BFCB4FD003FC4C0 /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC923902BFCB4FD003FC4C0 /* CustomButtonView.swift */; };
+		0BC923932BFCB599003FC4C0 /* settingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC923922BFCB599003FC4C0 /* settingButton.swift */; };
+		0BC923982BFCBE91003FC4C0 /* PolyKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0BC923972BFCBE91003FC4C0 /* PolyKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,8 @@
 		0BC9237B2BFC8E2F003FC4C0 /* openInApptestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = openInApptestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BC9237F2BFC8E2F003FC4C0 /* openInApptestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openInApptestUITests.swift; sourceTree = "<group>"; };
 		0BC923812BFC8E2F003FC4C0 /* openInApptestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openInApptestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0BC923902BFCB4FD003FC4C0 /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
+		0BC923922BFCB599003FC4C0 /* settingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BC923982BFCBE91003FC4C0 /* PolyKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +102,8 @@
 			children = (
 				0BC923642BFC8E2D003FC4C0 /* openInApptestApp.swift */,
 				0BC923662BFC8E2D003FC4C0 /* ContentView.swift */,
+				0BC923902BFCB4FD003FC4C0 /* CustomButtonView.swift */,
+				0BC923922BFCB599003FC4C0 /* settingButton.swift */,
 				0BC923682BFC8E2F003FC4C0 /* Assets.xcassets */,
 				0BC9236A2BFC8E2F003FC4C0 /* Preview Content */,
 			);
@@ -143,6 +151,9 @@
 			dependencies = (
 			);
 			name = openInApptest;
+			packageProductDependencies = (
+				0BC923972BFCBE91003FC4C0 /* PolyKit */,
+			);
 			productName = openInApptest;
 			productReference = 0BC923612BFC8E2D003FC4C0 /* openInApptest.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +226,9 @@
 				Base,
 			);
 			mainGroup = 0BC923582BFC8E2D003FC4C0;
+			packageReferences = (
+				0BC923962BFCBD5C003FC4C0 /* XCRemoteSwiftPackageReference "PolyKit" */,
+			);
 			productRefGroup = 0BC923622BFC8E2D003FC4C0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,6 +271,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BC923932BFCB599003FC4C0 /* settingButton.swift in Sources */,
+				0BC923912BFCB4FD003FC4C0 /* CustomButtonView.swift in Sources */,
 				0BC923672BFC8E2D003FC4C0 /* ContentView.swift in Sources */,
 				0BC923652BFC8E2D003FC4C0 /* openInApptestApp.swift in Sources */,
 			);
@@ -430,6 +446,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +476,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -588,6 +606,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0BC923962BFCBD5C003FC4C0 /* XCRemoteSwiftPackageReference "PolyKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/heestand-xyz/PolyKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0BC923972BFCBE91003FC4C0 /* PolyKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BC923962BFCBD5C003FC4C0 /* XCRemoteSwiftPackageReference "PolyKit" */;
+			productName = PolyKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0BC923592BFC8E2D003FC4C0 /* Project object */;
 }
